@@ -10,22 +10,25 @@
 
 .modal {
   position: fixed;
-  top: 10vh;
-  left: 5%;
-  width: 90%;
-  background-color: white;
-  padding: 1rem;
+  top: 12vh;
+  left: 0;
+  right: 0;
+  max-width: 812px;
+  width: 85%;
+  height: 76vh;
+  background-color: #12151b;
+  color: white;
+  padding: 14px;
+  margin: auto;
   border-radius: 14px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
   animation: slide-down 300ms ease-out forwards;
 }
 
-@media (min-width: 768px) {
-  .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
-  }
+.content {
+  /* border: 1px green solid; */
+  height: 100%;
 }
 
 @keyframes slide-down {

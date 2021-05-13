@@ -42,8 +42,10 @@ const AvailableMeals = () => {
     fetchData();
   }, []);
 
+  let mainContent;
+
   if (isLoading) {
-    return (
+    mainContent = (
       <section className={styles.loading}>
         <p>Loading...</p>
       </section>
@@ -51,30 +53,34 @@ const AvailableMeals = () => {
   }
 
   if (isError) {
-    return (
+    mainContent = (
       <section className={styles.error}>
         <p>Failed to fetch data</p>
       </section>
     );
   }
 
-  const mealsList = meals.map((meal) => (
-    <MealItem
-      key={meal.id}
-      id={meal.id}
-      name={meal.name}
-      description={meal.description}
-      price={meal.price}
-    />
-  ));
+  if (!isLoading && !isError) {
+    const mealsList = meals.map((meal) => (
+      <MealItem
+        key={meal.id}
+        id={meal.id}
+        name={meal.name}
+        description={meal.description}
+        price={meal.price}
+      />
+    ));
 
-  return (
-    <section className={styles.meals}>
-      <Card>
-        <ul>{mealsList}</ul>
-      </Card>
-    </section>
-  );
+    mainContent = (
+      <section className={styles.meals}>
+        <Card>
+          <ul>{mealsList}</ul>
+        </Card>
+      </section>
+    );
+  }
+
+  return <div className={styles.container}>{mainContent}</div>;
 };
 
 export default AvailableMeals;

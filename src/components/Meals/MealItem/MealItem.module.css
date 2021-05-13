@@ -1,22 +1,35 @@
 .meal {
+  background-color: #292c31;
+  color: white;
+  border-radius: 14px;
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #ccc;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 14px;
+}
+
+.meal .title {
+  /* border: 1px green solid; */
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .meal h3 {
-  margin: 0 0 0.25rem 0;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .description {
-  font-style: italic;
+  font-size: 14px;
+  color: #858789;
+  margin-left: 8px;
 }
 
 .price {
-  margin-top: 0.25rem;
-  font-weight: bold;
-  color: #ad5502;
-  font-size: 1.25rem;
+  color: #ee4c14;
+  font-size: 20px;
+  font-weight: 400;
 }

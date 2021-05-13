@@ -5,12 +5,17 @@
   outline: none;
   background-color: #4d1601;
   color: white;
-  padding: 0.75rem 3rem;
+  padding: 10px 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 25px;
   font-weight: bold;
+}
+
+.button span {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .button:hover,
@@ -19,16 +24,16 @@
 }
 
 .icon {
-  width: 1.35rem;
-  height: 1.35rem;
-  margin-right: 0.5rem;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
 .badge {
   background-color: #b94517;
-  padding: 0.25rem 1rem;
+  padding: 6px 18px;
   border-radius: 25px;
-  margin-left: 1rem;
+  margin-left: 16px;
   font-weight: bold;
 }
 

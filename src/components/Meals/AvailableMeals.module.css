@@ -1,13 +1,19 @@
+.container {
+  /* border: 1px yellow solid; */
+  max-width: 840px;
+  width: 100%;
+  margin: 80px auto 0;
+  padding: 14px;
+}
+
 .meals {
-  max-width: 60rem;
-  width: 90%;
-  margin: 2rem auto;
+  /* border: 1px red solid; */
+  width: 100%;
   animation: meals-appear 1s ease-out forwards;
 }
 
 .loading,
 .error {
-  margin: 2rem auto;
   text-align: center;
   color: white;
 }
