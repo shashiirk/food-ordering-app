@@ -1,7 +1,8 @@
-import Header from './components/Layout/Header';
+import Header from './components/Header/Header';
 import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
+import Footer from './components/Footer/Footer';
 import { useState } from 'react';
 
 function App() {
@@ -19,9 +20,10 @@ function App() {
     <CartProvider>
       {cartIsShown && <Cart onHideCart={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
-      <main>
+      <main className="main">
         <Meals />
       </main>
+      <Footer />
     </CartProvider>
   );
 }

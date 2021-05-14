@@ -54,29 +54,37 @@ const Cart = (props) => {
       <button className={styles['button--alt']} onClick={props.onHideCart}>
         Close
       </button>
-      {hasItems && (
-        <button className={styles.button} onClick={checkoutHandler}>
-          Order
-        </button>
-      )}
+      <button className={styles.button} onClick={checkoutHandler}>
+        Order
+      </button>
     </div>
   );
 
   const cartContent = (
     <div className={styles.page1}>
-      {!isCheckout && (
-        <>
-          <ul className={styles['cart-items']}>{cartItems}</ul>
-          <div className={styles.total}>
-            <span>Total amount</span>
-            <span>{totalAmount}</span>
+      {!isCheckout &&
+        (hasItems ? (
+          <>
+            <ul className={styles['cart-items']}>{cartItems}</ul>
+            <div className={styles.total}>
+              <span>Total amount</span>
+              <span>{totalAmount}</span>
+            </div>
+            {modalActions}
+          </>
+        ) : (
+          <div className={styles.page2}>
+            <p>Your cart is empty!</p>
+            <div className={styles.actions}>
+              <button className={styles.button} onClick={props.onHideCart}>
+                Close
+              </button>
+            </div>
           </div>
-        </>
-      )}
+        ))}
       {isCheckout && (
         <Checkout onConfirm={confirmOrderHandler} onCancel={checkoutHandler} />
       )}
-      {!isCheckout && modalActions}
     </div>
   );
 

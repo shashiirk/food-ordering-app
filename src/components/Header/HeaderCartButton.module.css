@@ -2,8 +2,9 @@
   cursor: pointer;
   font: inherit;
   border: none;
+  box-shadow: 0 0 4px #ee4c14;
   outline: none;
-  background-color: #4d1601;
+  background-color: transparent;
   color: white;
   padding: 10px 30px;
   display: flex;
@@ -18,11 +19,6 @@
   font-weight: 400;
 }
 
-.button:hover,
-.button:active {
-  background-color: #2c0d00;
-}
-
 .icon {
   width: 20px;
   height: 20px;
@@ -30,16 +26,15 @@
 }
 
 .badge {
-  background-color: #b94517;
+  background-color: #ee4c14;
   padding: 6px 18px;
   border-radius: 25px;
-  margin-left: 16px;
-  font-weight: bold;
+  margin-left: 8px;
 }
 
-.button:hover .badge,
-.button:active .badge {
-  background-color: #92320c;
+.button:hover,
+.button:active {
+  box-shadow: 0 0 4px 2px #ee4c14;
 }
 
 .bump {
