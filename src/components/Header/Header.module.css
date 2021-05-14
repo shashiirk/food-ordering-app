@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: #e71407; */
+  background-color: #12151b;
   color: white;
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
   z-index: 10;
@@ -11,7 +11,7 @@
 
 .header .container {
   /* border: 1px white solid; */
-  max-width: 840px;
+  max-width: 540px;
   width: 100%;
   padding: 14px;
   margin: auto;

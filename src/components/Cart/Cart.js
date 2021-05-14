@@ -25,13 +25,16 @@ const Cart = (props) => {
 
   const confirmOrderHandler = async (userData) => {
     setIsSubmitting(true);
-    await fetch('https://feast-582d8-default-rtdb.firebaseio.com/orders.json', {
-      method: 'POST',
-      body: JSON.stringify({
-        user: userData,
-        items: ctx.items,
-      }),
-    });
+    await fetch(
+      'https://foodspaceendpoint-default-rtdb.firebaseio.com/orders.json',
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          user: userData,
+          items: ctx.items,
+        }),
+      }
+    );
     setIsSubmitting(false);
     setDidSubmit(true);
     ctx.clearCart();

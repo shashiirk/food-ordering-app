@@ -1,6 +1,6 @@
 .container {
   /* border: 1px green solid; */
-  max-width: 340px;
+  max-width: 320px;
   width: 100%;
   height: 100%;
   margin: auto;
@@ -82,18 +82,6 @@
   color: white;
 }
 
-.actions button:hover,
-.actions button:active {
-  background-color: #ee4c14;
-  color: white;
-}
-
-.actions .submit:hover,
-.actions .submit:active {
-  background-color: #a6350e;
-  border-color: #a6350e;
-}
-
 .invalid p {
   visibility: visible;
 }
@@ -101,4 +89,28 @@
 .invalid input,
 .invalid input:focus {
   border-color: #f11c1c;
+}
+
+@media (hover: hover) {
+  .actions button:hover {
+    background-color: #ee4c14;
+    color: white;
+  }
+
+  .actions .submit:hover {
+    background-color: #a6350e;
+    border-color: #a6350e;
+  }
+}
+
+@media (hover: none) {
+  .actions button:active {
+    background-color: #ee4c14;
+    color: white;
+  }
+
+  .actions .submit:active {
+    background-color: #a6350e;
+    border-color: #a6350e;
+  }
 }

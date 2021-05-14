@@ -1,9 +1,9 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Input from '../../UI/Input';
 import styles from './MealItemForm.module.css';
 
 const MealItemForm = (props) => {
-  const [amountIsValid, setAmountIsValid] = useState(true);
+  // const [amountIsValid, setAmountIsValid] = useState(true);
 
   const inputRef = useRef();
 
@@ -18,11 +18,11 @@ const MealItemForm = (props) => {
       enteredAmountNumber < 1 ||
       enteredAmount > 5
     ) {
-      setAmountIsValid(false);
+      // setAmountIsValid(false);
       return;
     }
 
-    setAmountIsValid(true);
+    // setAmountIsValid(true);
     props.onAddToCart(enteredAmountNumber);
   };
 

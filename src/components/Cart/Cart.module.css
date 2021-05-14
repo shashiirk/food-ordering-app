@@ -35,6 +35,7 @@
 }
 
 .actions {
+  margin-top: 4px;
   text-align: right;
 }
 
@@ -49,20 +50,6 @@
   margin-left: 1rem;
 }
 
-.actions button:hover,
-.actions button:active {
-  background-color: #ee4c14;
-  border-color: #ee4c14;
-  color: white;
-}
-
-.actions .button:hover,
-.actions .button:active {
-  background-color: #a6350e;
-  border-color: #a6350e;
-  color: white;
-}
-
 .actions .button--alt {
   color: #ee4c14;
 }
@@ -70,4 +57,38 @@
 .actions .button {
   background-color: #ee4c14;
   color: white;
+}
+
+@media (hover: hover) {
+  .actions button:hover {
+    background-color: #ee4c14;
+    border-color: #ee4c14;
+    color: white;
+  }
+
+  .actions .button:hover {
+    background-color: #a6350e;
+    border-color: #a6350e;
+    color: white;
+  }
+}
+
+@media (hover: none) {
+  .actions button:active {
+    background-color: #ee4c14;
+    border-color: #ee4c14;
+    color: white;
+  }
+
+  .actions .button:active {
+    background-color: #a6350e;
+    border-color: #a6350e;
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  .total {
+    font-size: 20px;
+  }
 }

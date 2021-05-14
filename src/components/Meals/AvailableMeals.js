@@ -12,7 +12,7 @@ const AvailableMeals = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          'https://feast-582d8-default-rtdb.firebaseio.com/meals.json'
+          'https://foodspaceendpoint-default-rtdb.firebaseio.com/meals.json'
         );
 
         if (!response.ok) {
@@ -26,7 +26,6 @@ const AvailableMeals = () => {
           loadedMeals.push({
             id: key,
             name: data[key].name,
-            description: data[key].description,
             price: data[key].price,
           });
         }
@@ -66,7 +65,6 @@ const AvailableMeals = () => {
         key={meal.id}
         id={meal.id}
         name={meal.name}
-        description={meal.description}
         price={meal.price}
       />
     ));

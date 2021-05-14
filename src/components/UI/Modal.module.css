@@ -10,12 +10,13 @@
 
 .modal {
   position: fixed;
-  top: 12vh;
+  top: 0;
   left: 0;
   right: 0;
-  max-width: 812px;
+  bottom: 0;
+  max-width: 512px;
   width: 85%;
-  height: 76vh;
+  height: 75%;
   background-color: #12151b;
   color: white;
   padding: 14px;
@@ -23,7 +24,7 @@
   border-radius: 14px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
   z-index: 30;
-  animation: slide-down 300ms ease-out forwards;
+  animation: fade-in 300ms ease-out forwards;
 }
 
 .content {
@@ -31,13 +32,17 @@
   height: 100%;
 }
 
-@keyframes slide-down {
+@keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(-3rem);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .modal {
+    width: 94%;
   }
 }

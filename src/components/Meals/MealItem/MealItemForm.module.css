@@ -18,7 +18,14 @@
   border-radius: 4px;
 }
 
-.form button:hover,
-.form button:active {
-  background-color: #a6350e;
+@media (hover: hover) {
+  .form button:hover {
+    background-color: #a6350e;
+  }
+}
+
+@media (hover: none) {
+  .form button:active {
+    background-color: #a6350e;
+  }
 }

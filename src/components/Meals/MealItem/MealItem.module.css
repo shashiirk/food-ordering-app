@@ -20,12 +20,7 @@
 .meal h3 {
   font-size: 16px;
   font-weight: 400;
-}
-
-.description {
-  font-size: 14px;
-  color: #858789;
-  margin-left: 8px;
+  margin-bottom: 4px;
 }
 
 .price {

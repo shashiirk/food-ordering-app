@@ -20,10 +20,7 @@ const MealItem = (props) => {
   return (
     <li className={styles.meal}>
       <div>
-        <div className={styles.title}>
-          <h3>{props.name}</h3>
-          <p className={styles.description}>{props.description}</p>
-        </div>
+        <h3>{props.name}</h3>
         <div className={styles.price}>{price}</div>
       </div>
       <div>
