@@ -1,5 +1,4 @@
 .container {
-  /* border: 1px yellow solid; */
   max-width: 540px;
   width: 100%;
   margin: auto;
@@ -7,15 +6,15 @@
 }
 
 .meals {
-  /* border: 1px red solid; */
   width: 100%;
-  animation: meals-appear 1s ease-out forwards;
+  animation: meals-appear 800ms ease-out forwards;
 }
 
 .loading,
 .error {
   text-align: center;
   color: white;
+  margin-top: 4px;
 }
 
 .meals ul {

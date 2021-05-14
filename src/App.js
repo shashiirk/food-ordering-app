@@ -16,6 +16,12 @@ function App() {
     setCartIsShown(false);
   };
 
+  if (cartIsShown) {
+    document.body.style = 'overflow-y: hidden';
+  } else {
+    document.body.style = '';
+  }
+
   return (
     <CartProvider>
       {cartIsShown && <Cart onHideCart={hideCartHandler} />}

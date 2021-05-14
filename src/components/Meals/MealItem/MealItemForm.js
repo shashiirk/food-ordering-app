@@ -3,8 +3,6 @@ import Input from '../../UI/Input';
 import styles from './MealItemForm.module.css';
 
 const MealItemForm = (props) => {
-  // const [amountIsValid, setAmountIsValid] = useState(true);
-
   const inputRef = useRef();
 
   const submitFormHandler = (event) => {
@@ -18,11 +16,11 @@ const MealItemForm = (props) => {
       enteredAmountNumber < 1 ||
       enteredAmount > 5
     ) {
-      // setAmountIsValid(false);
       return;
     }
 
-    // setAmountIsValid(true);
+    inputRef.current.value = '1';
+    inputRef.current.blur();
     props.onAddToCart(enteredAmountNumber);
   };
 

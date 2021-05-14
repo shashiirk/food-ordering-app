@@ -1,5 +1,5 @@
 .meal {
-  background-color: #292c31;
+  background-color: #202327;
   color: white;
   border-radius: 14px;
   display: flex;
@@ -10,7 +10,6 @@
 }
 
 .meal .title {
-  /* border: 1px green solid; */
   margin-bottom: 4px;
   display: flex;
   justify-content: center;

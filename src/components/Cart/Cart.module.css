@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .cart-items {
-  /* border: 1px red solid; */
   list-style: none;
   margin: 0;
   padding: 0;
