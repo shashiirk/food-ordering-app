@@ -4,7 +4,7 @@ It's a fictional food ordering app. Add food items that you want to order to the
 
 ## Preview
 
-![preview](https://user-images.githubusercontent.com/48406108/118348935-257cdc00-b56b-11eb-8a09-d0604566278e.jpg)
+![preview](https://user-images.githubusercontent.com/48406108/118349439-4692fc00-b56e-11eb-930a-64bb43e2ace2.gif)
 
 ## Live Demo
 
