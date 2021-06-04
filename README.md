@@ -10,7 +10,7 @@ It's a fictional food ordering app. Add food items that you want to order to the
 
 See it live [here](https://shashiirk.github.io/foodspace).
 
-## Get Started
+## Installation
 
 Clone this repository to your local machine
 
